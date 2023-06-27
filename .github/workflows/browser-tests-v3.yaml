@@ -6,11 +6,11 @@ on:
             - 'v3*'
 
 jobs:
-    regression-content-setup1:
+    regression-headless-setup1:
         name: "PHP 7.4/PostgreSQL/Varnish/Redis/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            project-edition: "content"
+            project-edition: "headless"
             project-version: ${{ github.ref_name }}
             test-suite: "--profile=regression --suite=content"
             test-setup-phase-1: "--profile=regression --suite=setup-content --tags=~@part2 --mode=standard"
@@ -25,11 +25,11 @@ jobs:
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
             TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-    regression-content-setup2:
+    regression-headless-setup2:
         name: "PHP 7.3/MySQL/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            project-edition: "content"
+            project-edition: "headless"
             project-version: ${{ github.ref_name }}
             test-suite: "--profile=regression --suite=content"
             test-setup-phase-1: "--profile=regression --suite=setup-content --tags=~@part2 --mode=standard"
@@ -45,11 +45,11 @@ jobs:
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
             TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-    regression-content-setup3:
+    regression-headless-setup3:
         name: "PHP 8.1/MySQL/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            project-edition: "content"
+            project-edition: "headless"
             project-version: ${{ github.ref_name }}
             test-suite: "--profile=regression --suite=content"
             test-setup-phase-1: "--profile=regression --suite=setup-content --tags=~@part2 --mode=standard"

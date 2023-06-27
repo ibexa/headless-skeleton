@@ -1,6 +1,6 @@
-# Ibexa DXP Content skeleton
+# Ibexa DXP Headless skeleton
 
-This is a website skeleton for Ibexa DXP Content edition. It requires a subscription.
+This is a website skeleton for Ibexa DXP Headless edition. It requires a subscription.
 
 Learn more about [Ibexa DXP](https://www.ibexa.co/products).
 
@@ -8,7 +8,7 @@ Learn more about [Ibexa DXP](https://www.ibexa.co/products).
 
 Create a new project using composer:
 ```
-composer create-project ibexa/content-skeleton ibexa_website
+composer create-project ibexa/headless-skeleton ibexa_website
 ```
 
 ## COPYRIGHT
