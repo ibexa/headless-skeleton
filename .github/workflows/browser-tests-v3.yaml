@@ -12,9 +12,9 @@ jobs:
         with:
             project-edition: "headless"
             project-version: ${{ github.ref_name }}
-            test-suite: "--profile=regression --suite=content"
-            test-setup-phase-1: "--profile=regression --suite=setup-content --tags=~@part2 --mode=standard"
-            test-setup-phase-2: "--profile=regression --suite=setup-content --tags=@part2 --mode=standard"
+            test-suite: "--profile=regression --suite=headless"
+            test-setup-phase-1: "--profile=regression --suite=setup-headless --tags=~@part2 --mode=standard"
+            test-setup-phase-2: "--profile=regression --suite=setup-headless --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             multirepository: true
@@ -31,9 +31,9 @@ jobs:
         with:
             project-edition: "headless"
             project-version: ${{ github.ref_name }}
-            test-suite: "--profile=regression --suite=content"
-            test-setup-phase-1: "--profile=regression --suite=setup-content --tags=~@part2 --mode=standard"
-            test-setup-phase-2: "--profile=regression --suite=setup-content --tags=@part2 --mode=standard"
+            test-suite: "--profile=regression --suite=headless"
+            test-setup-phase-1: "--profile=regression --suite=setup-headless --tags=~@part2 --mode=standard"
+            test-setup-phase-2: "--profile=regression --suite=setup-headless --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             multirepository: true
@@ -51,9 +51,9 @@ jobs:
         with:
             project-edition: "headless"
             project-version: ${{ github.ref_name }}
-            test-suite: "--profile=regression --suite=content"
-            test-setup-phase-1: "--profile=regression --suite=setup-content --tags=~@part2 --mode=standard"
-            test-setup-phase-2: "--profile=regression --suite=setup-content --tags=@part2 --mode=standard"
+            test-suite: "--profile=regression --suite=headless"
+            test-setup-phase-1: "--profile=regression --suite=setup-headless --tags=~@part2 --mode=standard"
+            test-setup-phase-2: "--profile=regression --suite=setup-headless --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             multirepository: true
