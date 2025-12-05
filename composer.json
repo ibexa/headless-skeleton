@@ -1,7 +1,7 @@
 {
-  "name": "ibexa/headless-skeleton",
-  "type": "project",
-  "license": "proprietary",
-  "description": "A project package for installing Ibexa DXP Headless edition",
-  "require": {}
+    "name": "ibexa/headless-skeleton",
+    "type": "project",
+    "license": "proprietary",
+    "description": "A project package for installing Ibexa DXP Headless edition",
+    "require": {}
 }
